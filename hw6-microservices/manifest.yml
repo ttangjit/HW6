@@ -1,0 +1,26 @@
+---
+memory: 1024M
+instances: 1
+buildpack: java_buildpack_offline
+env:
+  CF_TARGET: https://api.run.haas-76.pez.pivotal.io
+applications:
+- name: item-service
+  host: jah-item
+  path: ./commerce-item-service/target/commerce-item-service-0.0.1-SNAPSHOT.jar
+  services:
+  - jah-config
+  - jah-registry
+- name: price-service
+  host: jah-price
+  path: ./commerce-price-service/target/commerce-price-service-0.0.1-SNAPSHOT.jar
+  services:
+  - jah-config
+  - jah-registry
+- name: commerce-ui
+  host:	jah-ui
+  path: ./commerce-ui/target/commerce-ui-0.0.1-SNAPSHOT.jar
+  services:
+  - jah-config
+  - jah-registry
+  - jah-circuit
