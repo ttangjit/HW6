@@ -4,7 +4,7 @@ Members:
 
 Nikita Venugopalan , Jah (Tanyaporn) Tangjitruamboon
 
-Instruction:
+Instructions:
 
 localhost:8081/items : show all items & prices
 
