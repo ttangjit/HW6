@@ -2,5 +2,4 @@
 
 Members:
 
-Nikita Venugopalan
-Jah (Tanyaporn) Tangjitruamboon
+Nikita Venugopalan , Jah (Tanyaporn) Tangjitruamboon
